@@ -1,0 +1,6 @@
+
+假如我们要把所在目录权限递归地改成644
+find -type d|xargs chmod 755
+
+假如我们要把所在目录下的所有文件权限递归地改成644：
+find -not -type d|xargs chmod 644 
